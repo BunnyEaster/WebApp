@@ -210,6 +210,9 @@ body {
 .jc-space-between {
   justify-content: space-between;
 }
+.jc-space-center {
+  justify-content: center;
+}
 .m-container {
   margin: 0 auto;
   width: 90%;
@@ -411,6 +414,27 @@ footer .social-media a {
 .bunnyworld {
   position: relative;
   min-height: 80vh;
+}
+.bunnycontent {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.bunnycontent2 {
+  position: absolute;
+  top: 25%;
+}
+.bunnycontent2 p {
+  width: 50%;
+  /* margin: 0 auto; */
+  padding: 15px;
+  margin-left: 50px;
+}
+.bunnycontent h1 {
+  color: var(--btn-hover);
 }
 .bg-img3 {
   /* background: url("../img/easterbunny.jpeg") no-repeat center center/contain; */
