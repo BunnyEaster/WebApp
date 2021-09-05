@@ -112,22 +112,24 @@ body {
   margin: 0 5px;
 }
 
-.navbar nav a:hover {
-  border: var(--primary-color) 1px solid;
-  border-radius: 5px;
-  margin: 0 4px;
-}
-
 .navbar ul {
   display: flex;
 }
 .navbar ul a {
   font-size: 22px;
-  font-weight: 500;
-  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  /* font-family: "DM Sans", sans-serif; */
   font-family: "ZCOOL KuaiLe", cursive;
   color: var(--btn-hover);
 }
+.navbar nav a:hover {
+  /* border: var(--primary-color) 1px solid; */
+  /* border-radius: 5px; */
+  color: var(--btn);
+}
+/* .navbar ul a:hover {
+  color: var(--btn);
+} */
 .navbar .logo {
   font-weight: 700;
   font-family: "DM Sans", sans-serif;
@@ -208,6 +210,10 @@ body {
 .jc-space-between {
   justify-content: space-between;
 }
+.m-container {
+  margin: 0 auto;
+  width: 90%;
+}
 .text-center {
   width: 100%;
   text-align: center;
@@ -240,7 +246,7 @@ body {
   font-size: 50px;
 }
 
-.hero h3 {
+.hero .left-hero h3 {
   color: var(--btn);
 }
 .hero p {
@@ -249,6 +255,10 @@ body {
 .nft-display,
 .gameplay {
   margin-top: 20vh;
+}
+.gamerules,
+.discovery {
+  margin-top: 10vh;
 }
 
 .nft-display {
@@ -278,4 +288,83 @@ body {
   font-family: "ZCOOL KuaiLe", cursive;
   /* font-family: "Amatic SC", cursive; */
   /* font-family: "Rampart One", cursive; */
+}
+
+.nft-display .left-display {
+  border: 2px solid var(--btn-hover);
+  border-radius: 20px;
+  padding: 20px;
+  width: 70%;
+  margin-top: 40px;
+  background-color: #ffffff50;
+  background-color: #33333350;
+  color: var(--btn);
+}
+.nft-display .left-display h2 {
+  color: #000000;
+}
+
+/* game play */
+.content,
+.discovery {
+  position: relative;
+}
+.gamerules .card {
+  /* margin-right: 50px; */
+  margin: 15px 10px;
+  width: 80%;
+}
+.gamerules .card .icon {
+  margin: 20px;
+}
+.gamerules .card .heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.gamerules .card .para {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* gameplay ends */
+
+/* discovery */
+.bg-image-2 {
+  background: url("../img/roadmap2.png") no-repeat center center/cover;
+  /* background: url("../img/easterbunny.jpeg") no-repeat center center/cover; */
+  width: 100vw;
+  /* height: 100vh; */
+  /* height: auto; */
+  height: 65vw;
+  /* opacity: 0.3; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.discovery .col {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer {
+  background-color: var(--btn-hover);
+  color: var(--btn);
+  color: white;
+  min-height: 25vh;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .col {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+footer .img-logo {
+  margin: 15px;
+}
+footer .social-media a {
+  margin: 15px;
+  color: white;
 }
