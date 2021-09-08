@@ -278,6 +278,7 @@ body {
 .hero .right-hero {
   align-self: flex-end;
   width: 25%;
+  align-items: center;
 }
 
 .hero h1 {
