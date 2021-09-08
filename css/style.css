@@ -223,6 +223,7 @@ body {
   margin: 15px;
   text-align: center;
   cursor: pointer;
+  width: fit-content;
 }
 .btn:hover {
   background-color: var(--btn-hover);
@@ -500,6 +501,7 @@ footer .social-media a {
   margin: 15px;
   text-align: center;
   cursor: pointer;
+  width: fit-content;
 }
 .btn-s:hover {
   /* background-color: var(--btn-hover); */
@@ -509,6 +511,8 @@ footer .social-media a {
   width: 128px;
   height: 68px;
 }
+
+/* 1.17em; */
 @keyframes mymove {
   0% {
     width: 128px;
@@ -521,6 +525,21 @@ footer .social-media a {
   100% {
     width: 128px;
     height: 68px;
+  }
+}
+.b-effect-text {
+  animation: mymovetext 1s infinite;
+  font-size: 1.17em;
+}
+@keyframes mymovetext {
+  0% {
+    font-size: 1.17em;
+  }
+  50% {
+    font-size: 1.3em;
+  }
+  100% {
+    font-size: 1.17em;
   }
 }
 @media (max-width: 768px) {
