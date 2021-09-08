@@ -74,6 +74,16 @@ body {
   height: 100vw;
 }
 
+body {
+  /* background: url("../img/bg4.jpg") no-repeat center center/cover; */
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0; */
+}
+
 .container-fluid {
   padding: 0 50px;
   width: 100%;
