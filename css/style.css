@@ -516,16 +516,16 @@ footer .social-media a {
 /* 1.17em; */
 @keyframes mymove {
   0% {
-    width: 128px;
-    height: 68px;
+    width: 100px;
+    height: 54px;
   }
   50% {
-    width: 135px;
-    height: 72px;
+    width: 105px;
+    height: 57px;
   }
   100% {
-    width: 128px;
-    height: 68px;
+    width: 100px;
+    height: 54px;
   }
 }
 .b-effect-text {
