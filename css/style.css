@@ -266,7 +266,7 @@ body {
 }
 .hero .left-hero {
   min-width: 40%;
-  width: 70%;
+  width: 65%;
   text-align: left;
 }
 .left-hero h1,
@@ -276,6 +276,7 @@ body {
 
 .hero .right-hero {
   align-self: flex-end;
+  width: 25%;
 }
 
 .hero h1 {
@@ -479,4 +480,54 @@ footer .social-media a {
   top: 0;
   left: 0;
   z-index: -1;
+}
+.gameplay img {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.glow {
+  color: var(--btn);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #00f, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #000;
+}
+.btn-s {
+  padding: 10px 20px;
+  /* border: 2px solid var(--btn); */
+  /* background-color: var(--btn); */
+  color: black;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-s:hover {
+  /* background-color: var(--btn-hover); */
+}
+.b-effect {
+  animation: mymove 1s infinite;
+  width: 128px;
+  height: 68px;
+}
+@keyframes mymove {
+  0% {
+    width: 128px;
+    height: 68px;
+  }
+  50% {
+    width: 135px;
+    height: 72px;
+  }
+  100% {
+    width: 128px;
+    height: 68px;
+  }
+}
+@media (max-width: 768px) {
+  .gameplay .row {
+    flex-wrap: wrap;
+  }
+  .bg-img {
+    background-size: 100vw 100vh;
+  }
 }

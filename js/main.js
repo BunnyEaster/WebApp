@@ -22,14 +22,19 @@ $(".slider").slick({
 // });
 
 window.onscroll = function () {
-  //   if (window.pageYOffset > window.innerHeight) {
-  //     $(".bg-img").addClass("fix-search");
-  //   } else {
-  //     $(".bg-img").removeClass("fix-search");
-  //   }
-  if (window.pageYOffset > window.innerWidth - window.innerHeight) {
-    $(".bg-img").addClass("fix-search");
+  if (window.innerWidth > window.innerHeight) {
+    if (window.pageYOffset > window.innerWidth - window.innerHeight) {
+      $(".bg-img").addClass("fix-search");
+    } else {
+      $(".bg-img").removeClass("fix-search");
+    }
   } else {
-    $(".bg-img").removeClass("fix-search");
+    $(".bg-img").addClass("fix-search");
+    $(".fix-search").css("background-position", "top");
   }
 };
+
+if (window.innerWidth < window.innerHeight) {
+  $(".bg-img").addClass("fix-search");
+  $(".fix-search").css("background-position", "top");
+}
