@@ -55,6 +55,8 @@ a {
 
 html {
   scroll-behavior: smooth;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
 }
 body {
   margin: 0;
@@ -62,18 +64,32 @@ body {
   /* font-family: "DMSans-Bold"; */
   font-family: var(--bs-font-sans-serif);
   font-family: "DM Sans", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .bg-img {
-  background: url("../img/bg6.jpg") no-repeat center center/cover;
+  /* background: url("../img/bg6.jpg") no-repeat center center/cover; */
   /* background: url("../img/easterbunny.jpeg") no-repeat center center/cover; */
   /* width: 100vw; */
-  /* height: 100vh; */
+  /* height: 100vw; */
   /* height: 100%; */
-  height: 100vw;
 }
-
+.bg-img {
+  /* background: url(../assets/test_pic.jpg); */
+  background: url("../img/bg6.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vw;
+  background-position: top;
+  background-attachment: scroll;
+  /* background-attachment: scroll; */
+  /* height: 100%; */
+  /* z-index: -1; */
+}
+.fix-search {
+  background-attachment: fixed;
+  /* background-size: 100vw 100vw; */
+  background-position: bottom;
+}
 body {
   /* background: url("../img/bg4.jpg") no-repeat center center/cover; */
   /* width: 100vw; */
@@ -106,6 +122,7 @@ body {
   padding: 32px 0;
   transition: 0.5s;
   z-index: 12;
+  flex-wrap: wrap;
 }
 
 /* .navbar.top {
@@ -124,6 +141,7 @@ body {
 
 .navbar ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .navbar ul a {
   font-size: 22px;
@@ -212,6 +230,7 @@ body {
 
 .row {
   display: flex;
+  /* flex-wrap: wrap; */
 }
 .col {
   display: flex;
@@ -247,8 +266,12 @@ body {
 }
 .hero .left-hero {
   min-width: 40%;
-  width: 60%;
+  width: 70%;
   text-align: left;
+}
+.left-hero h1,
+.left-hero p {
+  text-transform: uppercase;
 }
 
 .hero .right-hero {
