@@ -266,6 +266,9 @@ body {
 .jc-space-center {
   justify-content: center;
 }
+.ai-center {
+  align-items: center;
+}
 .m-container {
   margin: 0 auto;
   width: 90%;
@@ -382,13 +385,14 @@ body {
   width: 80%;
 }
 .gamerules .card .icon {
-  width: 50px;
+  /* width: 50px; */
   margin: 20px;
   padding: 10px;
 }
 .gamerules .card .heading {
   font-size: 24px;
   font-weight: 600;
+  color: var(--btn);
 }
 
 .gamerules .card .para {
@@ -416,6 +420,59 @@ body {
   top: 0;
   left: 0;
 }
+/* slider */
+.slider {
+  width: 100%;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+.slick-dots li {
+  margin: 0 0.25rem;
+}
+.slick-dots button {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: var(--btn-hover);
+  text-indent: -9999px;
+}
+.slick-dots li.slick-active button {
+  background-color: var(--btn);
+}
+
+.slide-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.single-card {
+  border: 2px solid var(--btn);
+  border-radius: 10px;
+  margin: 15px;
+  width: fit-content;
+}
+.single-card img {
+  height: 300px;
+  width: 300px;
+}
+
+.slide-row .content {
+  align-self: center;
+  margin: 20px auto;
+  max-width: 80vw;
+}
+
+/* footer */
 footer {
   /* background-color: var(--btn-hover); */
   color: var(--btn);
@@ -475,7 +532,7 @@ footer .social-media a {
 /* bunny world */
 .bunnyworld {
   position: relative;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 .bunnycontent {
   position: absolute;
@@ -648,5 +705,33 @@ footer .social-media a {
   }
   .left-hero p {
     font-size: 10px;
+  }
+  .right-display h1 {
+    font-size: 20px;
+  }
+
+  .nft-display .left-display {
+    width: unset;
+    border: 6px solid var(--btn-hover);
+    margin: 40px 10px;
+    background-color: #902b002b;
+    text-align: justify;
+  }
+  .gamerules,
+  .discovery {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .gameplay .row {
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* slider */
+  .slide-card {
+    flex-direction: column;
+    align-items: center;
   }
 }
