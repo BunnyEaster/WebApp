@@ -3,9 +3,9 @@ $(".slider").slick({
   dots: true,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 800,
+  autoplaySpeed: 2000,
   fade: true,
-  fadeSpeed: 1000,
+  fadeSpeed: 500,
   //   slidesToShow: 2,s
 });
 

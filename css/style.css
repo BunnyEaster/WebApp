@@ -361,15 +361,11 @@ body {
   height: 20vh;
   margin: 30px;
 }
-.nft-display {
-  /* background: url("../img/bg4.jpg") no-repeat center center/cover; */
+/* .nft-display {
   background: url("../img/1024x1024\ 1.jpg") no-repeat center center/cover;
-  /* width: 100vw; */
-  /* height: 65vw; */
   background-attachment: fixed;
-  /* background-position: top; */
   z-index: -1;
-}
+} */
 .nft-display .left-display {
   border: 20px solid var(--btn-hover);
   border-radius: 20px;
