@@ -474,7 +474,7 @@ body {
 
 /* footer */
 footer {
-  /* background-color: var(--btn-hover); */
+  background-color: var(--btn-hover);
   color: var(--btn);
   color: white;
   min-height: 65vh;
@@ -486,7 +486,8 @@ footer {
   width: 100%;
   height: 68vh;
   /* opacity: 0.3; */
-  position: absolute;
+  /* position: absolute; */
+  background-attachment: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -497,7 +498,7 @@ footer .copyright {
 }
 footer .col {
   width: 100%;
-  height: 65vh;
+  /* height: 65vh; */
   align-items: center;
   /* justify-content: center; */
   justify-content: space-between;
@@ -533,6 +534,7 @@ footer .social-media a {
 .bunnyworld {
   position: relative;
   /* min-height: 80vh; */
+  margin: 100px 0;
 }
 .bunnycontent {
   position: absolute;
@@ -562,6 +564,7 @@ footer .social-media a {
   height: 50vw;
   /* opacity: 0.3; */
   /* position: absolute; */
+  background-attachment: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -733,5 +736,14 @@ footer .social-media a {
   .slide-card {
     flex-direction: column;
     align-items: center;
+  }
+  .bunnyworld {
+    margin: unset;
+  }
+  .bg-img4 {
+    height: 30vh;
+  }
+  footer .col {
+    height: unset;
   }
 }
