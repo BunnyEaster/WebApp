@@ -180,6 +180,7 @@ body {
   width: 200px;
   top: 0;
   left: 55px;
+  z-index: 1;
 }
 /* Search box */
 .input-main {
@@ -217,9 +218,8 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-.btn {
+/* .btn {
   padding: 10px 20px;
-  /* border: 2px solid var(--btn); */
   background-color: var(--btn);
   color: white;
   font-weight: 500;
@@ -228,9 +228,28 @@ body {
   text-align: center;
   cursor: pointer;
   width: fit-content;
+} */
+.btn {
+  padding: 10px 20px;
+  border: 2px solid var(--btn);
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  color: var(--btn-hover);
+  margin: 15px;
+  text-align: center;
+  cursor: pointer;
+  width: fit-content;
+  font-family: "ZCOOL KuaiLe", cursive;
+  background-color: #00000001;
+  /* color: var(--btn); */
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #00f, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #000;
 }
+
 .btn:hover {
   background-color: var(--btn-hover);
+  color: white;
 }
 
 .row {
@@ -363,7 +382,9 @@ body {
   width: 80%;
 }
 .gamerules .card .icon {
+  width: 50px;
   margin: 20px;
+  padding: 10px;
 }
 .gamerules .card .heading {
   font-size: 24px;
@@ -510,7 +531,9 @@ footer .social-media a {
   width: fit-content;
 }
 .btn-s:hover {
-  /* background-color: var(--btn-hover); */
+  color: var(--btn-hover);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #00f, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #000;
 }
 .b-effect {
   animation: mymove 1s infinite;
@@ -550,11 +573,80 @@ footer .social-media a {
     font-size: 1.17em;
   }
 }
+
+.nav-open {
+  display: none;
+  /* position: absolute; */
+  right: 10px;
+  top: 15px;
+  color: var(--btn-hover) !important;
+}
+.fa-times {
+  display: none;
+}
 @media (max-width: 768px) {
   .gameplay .row {
     flex-wrap: wrap;
   }
   .bg-img {
     background-size: 100vw 100vh;
+  }
+  .wallet-btn,
+  nav {
+    display: none;
+    z-index: 2;
+    /* width: 100vw; */
+    /* background-color: var(--btn); */
+  }
+  .nav-open {
+    display: block;
+  }
+  .navbar ul {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+  }
+  .navbar ul li {
+    margin: 10px;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #00f, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #000;
+  }
+  .logo img {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+  }
+  nav {
+    height: 80vh;
+    width: 100vw;
+  }
+  .wallet-btn {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    margin: 0 auto 20px auto;
+    /* margin-bottom: 20px; */
+    /* width: 100%; */
+  }
+  .hero-row {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .hero .left-hero,
+  .hero .right-hero {
+    width: unset;
+  }
+  .left-hero h1 {
+    font-size: 32px;
+  }
+  .left-hero h3 {
+    font-size: 14px;
+  }
+  .left-hero p {
+    font-size: 10px;
   }
 }

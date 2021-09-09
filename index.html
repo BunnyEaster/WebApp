@@ -11,8 +11,8 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css?v=1.0.9" />
-    <link rel="stylesheet" href="./css/sliderstyle.css?v=1.0.4" />
+    <link rel="stylesheet" href="./css/style.css?v=1.1.0" />
+    <link rel="stylesheet" href="./css/sliderstyle.css?v=1.0.5" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
@@ -32,6 +32,10 @@
               <img src="./img/logo/256x256 new.png" alt="EASTER BUNNY" />
             </a>
           </h1>
+          <a href="javascript:void(0);" class="nav-open" onclick="navswitch()">
+            <i id="fa-bars" class="fa fa-bars fa-2x"></i>
+            <i id="fa-times" class="fas fa-times fa-2x"></i>
+          </a>
           <!-- search box input -->
           <!-- <div class="input-main">
             <input class="input" type="text" placeholder="Search Bunny" />
@@ -51,7 +55,7 @@
               ></path>
             </svg>
           </div> -->
-          <nav>
+          <nav id="nav">
             <ul>
               <li><a href="index.html#home">Home</a></li>
               <li><a href="index.html#about">Market</a></li>
@@ -61,7 +65,7 @@
               <!-- <li><a href="index.html#usecase">Usecase</a></li> -->
             </ul>
           </nav>
-          <div class="wallet-btn">
+          <div class="wallet-btn" id="wallet-btn">
             <div class="btn">Connect Wallet</div>
           </div>
         </div>
@@ -130,10 +134,10 @@
         <div class="gameplay">
           <div class="col">
             <h1 class="text-center">Gameplay</h1>
-            <p class="text-center">
+            <!-- <p class="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="row m-container">
+            </p> -->
+            <div class="row jc-space-center">
               <img src="./img/nft1.png" alt="" class="left-gameplay" />
               <div class="gamerules">
                 <div class="card">
@@ -142,11 +146,9 @@
                       <i class="fas fa-2x fa-hand-sparkles"></i>
                     </div>
                     <div class="col">
-                      <div class="heading">Lorem ipsum dolor</div>
+                      <div class="heading">Earn</div>
                       <div class="para">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Laboriosam molestiae quibusdam exercitationem
-                        dolore magni
+                        Earn unique mintable nfts by participating in the game
                       </div>
                     </div>
                   </div>
@@ -154,33 +156,19 @@
                 <div class="card">
                   <div class="row">
                     <div class="icon">
-                      <i class="fas fa-2x fa-dizzy"></i>
-                    </div>
-                    <div class="col">
-                      <div class="heading">Lorem ipsum dolor</div>
-                      <div class="para">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Laboriosam molestiae quibusdam exercitationem
-                        dolore magni
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="row">
-                    <div class="icon">
+                      <!-- <i class="fas fa-2x fa-dizzy"></i> -->
                       <i class="fab fa-2x fa-fort-awesome"></i>
                     </div>
                     <div class="col">
-                      <div class="heading">Lorem ipsum dolor</div>
+                      <div class="heading">Farm</div>
                       <div class="para">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Laboriosam molestiae quibusdam exercitationem
-                        dolore magni
+                        Farming of crypto assests to further the goal of
+                        decentralised finance
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div style="margin: 20px 10px 10px 10px">
                   <a
                     href="/"
@@ -324,16 +312,28 @@
       <div class="bg-img4"></div>
       <div class="col">
         <div class="social-media row">
-          <a href="http://" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://twitter.com/EasterBunnyNFT"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-2x fa-twitter"></i
           ></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://t.me/joinchat/ZpvEsgDvkIthYmNh"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-2x fa-telegram-plane"></i
           ></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://github.com/BunnyEaster"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-2x fa-github-alt"></i
           ></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://medium.com/@easterbunnynft"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-2x fa-medium-m"></i
           ></a>
         </div>
