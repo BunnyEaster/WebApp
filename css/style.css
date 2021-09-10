@@ -70,7 +70,8 @@ body {
 }
 
 .bg-img {
-  background: url("../img/1280x720\ bunny.jpg");
+  background: url("../img/AADA.gif"), url("../img/1280x720\ bunny.jpg");
+  /* background: url("../img/1280X720\ Bunny-1.gif"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -678,7 +679,7 @@ footer .social-media a {
 
   .bg-img {
     /* background: url(../assets/test_pic.jpg); */
-    background: url("../img/720x1280\ bunny.jpg");
+    background: url("../img/Lamba.gif"), url("../img/720x1280\ bunny.jpg");
     background-repeat: no-repeat;
     /* background-size: 100vw 100vw; */
     background-size: cover;
