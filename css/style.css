@@ -911,8 +911,7 @@ footer .social-media a {
     align-self: unset;
   }
   .left-display-container {
-    background: url("../img/bgboard/1280x720.png") no-repeat center
-      center/contain;
+    background: url("../img/bgboard/1280x720.png") no-repeat center center/cover;
     width: 100%;
     height: fit-content;
     display: flex;
