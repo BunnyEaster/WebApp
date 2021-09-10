@@ -68,6 +68,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   /* overflow-x: hidden; */
 }
+/* 
 .preloader {
   position: fixed;
   top: 0;
@@ -77,8 +78,59 @@ body {
   z-index: 1000;
   background-color: #000000;
 }
+.preloader .bar-pre {
+  position: relative;
+  height: 2px;
+  width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 150px;
+}
+
+.preloader .circle-pre {
+  position: absolute;
+  top: -30px;
+  margin-left: -30px;
+  height: 60px;
+  width: 60px;
+  left: 0;
+  background: #fff;
+  border-radius: 30%;
+  -webkit-animation: move 5s infinite;
+}
+
+.preloader p {
+  position: absolute;
+  top: -35px;
+  right: -85px;
+  text-transform: uppercase;
+  color: #347fc3;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+    -webkit-transform: rotate(450deg);
+    width: 150px;
+    height: 150px;
+  }
+  75% {
+    left: 100%;
+    -webkit-transform: rotate(450deg);
+    width: 150px;
+    height: 150px;
+  }
+  100 {
+    right: 100%;
+  }
+} */
 .bg-img {
-  background: url("../img/AADA.gif"), url("../img/1280x720\ bunny.jpg");
+  background: url("../img/1280x720\ bunny.jpg");
   /* background: url("../img/1280X720\ Bunny-1.gif"); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,7 +224,65 @@ body {
   top: 0;
   left: 55px;
   z-index: 1;
+  /* -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg); */
+  animation: logomove 5s infinite;
 }
+@keyframes logomove {
+  0% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  /* 25% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  } */
+  50% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* 75% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  } */
+  100% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+/* @keyframes logomove {
+  0% {
+    width: 200px;
+    height: 200px;
+  }
+  50% {
+    width: 210px;
+    height: 210px;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+  }
+} */
+
 /* Search box */
 .input-main {
   position: relative;
@@ -687,7 +797,7 @@ footer .social-media a {
 
   .bg-img {
     /* background: url(../assets/test_pic.jpg); */
-    background: url("../img/Lamba.gif"), url("../img/720x1280\ bunny.jpg");
+    background: url("../img/720x1280\ bunny.jpg");
     background-repeat: no-repeat;
     /* background-size: 100vw 100vw; */
     background-size: cover;
