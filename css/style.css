@@ -535,6 +535,7 @@ body {
   height: 100vh;
   background: linear-gradient(90deg, #d64ca8 0%, #6f42c1 100%);
   background: linear-gradient(90deg, var(--btn) 0%, var(--btn-hover) 100%);
+  position: relative;
 }
 .gamerules {
   display: flex;
@@ -566,6 +567,36 @@ body {
 .gamerules .watch-now-video {
   font-size: 35px;
 }
+
+.gameplay .video-popup {
+  display: none;
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  top: 10px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.486);
+  z-index: 100;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.gameplay .video-popup .close {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 2;
+  opacity: 1;
+  font-size: 35px;
+  background-color: var(--btn);
+  border-radius: 100%;
+}
+
 /* gameplay ends */
 
 /* discovery */

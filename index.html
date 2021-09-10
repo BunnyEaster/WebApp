@@ -11,7 +11,7 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css?v=1.1.8" />
+    <link rel="stylesheet" href="./css/style.css?v=1.1.9" />
     <link rel="stylesheet" href="./css/sliderstyle.css?v=1.0.5" />
     <link
       rel="stylesheet"
@@ -210,17 +210,29 @@
                   </div>
                 </div>
 
-                <div class="watch-now-video">
-                  <a
-                    href="/"
+                <div class="watch-now-video" onclick="startvideo()">
+                  <div
+                    href="index.html"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="readmore btn"
-                    ><i class="far fa-play-circle"></i> Watch now</a
                   >
+                    <i class="far fa-play-circle"></i> Watch now
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="video-popup" id="video-popup">
+            <video id="trail-video" width="100%" height="100%" controls>
+              <source
+                src="https://res.cloudinary.com/easterbunny/video/upload/v1631270429/easter%20bunny%20img/img/Trailer_With_Music-1_cg387u.mp4"
+                type="video/mp4"
+              />
+              <!-- <source src="movie.ogg" type="video/ogg"> -->
+              Your browser does not support the video tag.
+            </video>
+            <div class="close" onclick="closevideo()">x</div>
           </div>
         </div>
         <br /><br />

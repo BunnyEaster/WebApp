@@ -71,3 +71,13 @@ function navswitch() {
 //   //hide the preloader
 //   document.querySelector(".preloader").style.display = "none";
 // };
+var vid = document.getElementById("trail-video");
+
+startvideo = () => {
+  document.getElementById("video-popup").style.display = "block";
+  vid.play();
+};
+closevideo = () => {
+  document.getElementById("video-popup").style.display = "none";
+  vid.pause();
+};
