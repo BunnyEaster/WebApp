@@ -75,6 +75,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 1000;
+  background-color: #000000;
 }
 .bg-img {
   background: url("../img/AADA.gif"), url("../img/1280x720\ bunny.jpg");
