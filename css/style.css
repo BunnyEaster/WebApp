@@ -418,9 +418,9 @@ body {
 
 .nft-display,
 .gameplay {
-  margin-top: 20vh;
+  height: 100vh;
 }
-.gamerules,
+
 .discovery {
   margin-top: 10vh;
 }
@@ -470,19 +470,27 @@ body {
 } */
 
 .left-display-container {
-  background: url("../img/bgboard/1300x640\ new.png") no-repeat center
-    center/contain;
+  /* background: url("../img/bgboard/1300x640\ new.png") no-repeat center
+    center/contain; */
+  /* background: url("../img/bgboard/640x1300.png") no-repeat center center/contain; */
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.left-display-container img {
+  margin-right: 10%;
+}
+.left-display {
+  display: none;
+}
 .nft-display .left-display {
   /* border: 20px solid var(--btn-hover); */
   border-radius: 20px;
   padding: 20px;
   width: 60%;
+  width: 50%;
   margin-top: 40px;
   /* background-color: #ffffff; */
   /* background-color: #902b0028; */
@@ -510,38 +518,61 @@ body {
 .discovery {
   position: relative;
 }
+.gameplay col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.gameplay h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 white;
+}
+.gameplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #d64ca8 0%, #6f42c1 100%);
+  background: linear-gradient(90deg, var(--btn) 0%, var(--btn-hover) 100%);
+}
+.gamerules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .gamerules .card {
-  /* margin-right: 50px; */
   margin: 15px 10px;
-  width: 80%;
+  width: 100%;
 }
 .gamerules .card .icon {
-  /* width: 50px; */
   margin: 20px;
   padding: 10px;
 }
 .gamerules .card .heading {
-  font-size: 24px;
+  font-size: 45px;
   font-weight: 600;
   color: var(--btn);
+  text-shadow: 0 0 white;
 }
 
 .gamerules .card .para {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 400;
+  color: white;
+  /* text-shadow: 0 0 white; */
+}
+
+.gamerules .watch-now-video {
+  font-size: 35px;
 }
 /* gameplay ends */
 
 /* discovery */
 .bg-image-2 {
   background: url("../img/roadmap2.png") no-repeat center center/cover;
-  /* background: url("../img/easterbunny.jpeg") no-repeat center center/cover; */
   width: 100vw;
-  /* height: 100vh; */
-  /* height: auto; */
   height: 65vw;
-  /* opacity: 0.3; */
-  /* position: absolute; */
   top: 0;
   left: 0;
   z-index: -1;
@@ -917,6 +948,12 @@ footer .social-media a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .left-display {
+    display: block;
+  }
+  .left-display-container img {
+    display: none;
   }
   .right-display-container {
     background: url("../img/bgboard/512x148.png") no-repeat center
