@@ -66,6 +66,7 @@ body {
   font-family: "DM Sans", sans-serif;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: "Roboto Condensed", sans-serif;
+  position: relative;
   /* overflow-x: hidden; */
 }
 /* 
@@ -568,19 +569,22 @@ body {
   font-size: 35px;
 }
 
-.gameplay .video-popup {
+.video-popup-1 {
   display: none;
-  position: absolute;
-  height: 90%;
-  width: 90%;
-  top: 10px;
-  margin: auto;
+  position: fixed;
+  height: fit-content;
+  width: 90vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
   background: rgba(255, 255, 255, 0.486);
   z-index: 100;
   border: 5px solid white;
   border-radius: 10px;
 }
-.gameplay .video-popup .close {
+.video-popup-1 .close {
   position: absolute;
   top: -20px;
   right: -15px;
