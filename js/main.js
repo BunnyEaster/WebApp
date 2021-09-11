@@ -44,26 +44,17 @@ function navswitch() {
   var x2 = document.getElementById("wallet-btn");
   var burger = document.getElementById("fa-bars");
   var close = document.getElementById("fa-times");
-  // var x3 = document.getElementById("social");
-  // var navClass = document.getElementsByClassName("navbar");
-  // var hrg = document.getElementById("hrgrad");
 
   if (x.style.display === "flex") {
     x.style.display = "none";
     x2.style.display = "none";
     burger.style.display = "block";
     close.style.display = "none";
-    // hrg.style.display = "none";
-    // x3.style.display = "none";
-    // navClass.style.flexDirection = "row";
   } else {
     x.style.display = "flex";
     x2.style.display = "flex";
     burger.style.display = "none";
     close.style.display = "block";
-    // hrg.style.display = "block";
-    // x3.style.display = "flex";
-    // navClass.style.flexDirection = "column";
   }
 }
 
@@ -81,15 +72,3 @@ closevideo = () => {
   document.getElementById("video-popup").style.display = "none";
   vid.pause();
 };
-// $(document).ready(function () {
-//   $("#fullpage").fullpage({
-//     //options here
-//     autoScrolling: true,
-//     scrollHorizontally: true,
-//     responsiveWidth: 800,
-//     // continuousVertical: true,
-//   });
-
-//   //methods
-//   $.fn.fullpage.setAllowScrolling(true);
-// });
