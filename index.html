@@ -25,13 +25,7 @@
   </head>
   <body>
     <!-- <header> -->
-    <div class="preloader">
-      <div class="logo">
-        <img src="./img/logo/256x256 new.png" alt="EASTER BUNNY" />
-      </div>
-        <p class="loader"></p>
-      </div>
-    </div>
+
     <div class="video-popup-1" id="video-popup">
       <video id="trail-video" width="100%" height="100%" controls>
         <source
@@ -98,7 +92,7 @@
               </li>
             </ul>
           </nav>
-          <div class="wallet-btn" id="wallet-btn">
+          <div class="wallet-btn" id="wallet-btn" onclick="startsoon()">
             <div class="btn">Connect Wallet</div>
           </div>
         </div>
@@ -118,7 +112,7 @@
             </h1>
             <p>Paradigm change in gaming</p>
           </div>
-          <div class="right-hero col">
+          <div class="right-hero col" onclick="startsoon()">
             <div class="hero-btn btn-s glow">
               <img class="b-effect" src="./img/gajar button4.png" alt="" />
               <h3 class="b-effect-text">PLAY</h3>
@@ -323,6 +317,19 @@
         </div>
       </div>
     </footer>
+    <div class="preloader">
+      <div class="logo">
+        <img src="./img/logo/256x256 new.png" alt="EASTER BUNNY" />
+      </div>
+      <p class="loader"></p>
+    </div>
+    <div class="coming-soon" id="comingsoon">
+      <!-- <div class="img-soon"> -->
+      <img src="./img/bgboard/512x148.png" alt="" class="coming-img" />
+      <div class="close" id="closesoon" onclick="closeSoon()">x</div>
+      <!-- </div> -->
+      <h2>COMING SOON</h2>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script> -->

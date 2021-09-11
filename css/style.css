@@ -243,6 +243,7 @@ body {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 .navbar {
   display: flex;
@@ -975,6 +976,57 @@ footer .social-media a {
   display: none;
 }
 
+.coming-soon {
+  position: absolute;
+  display: none;
+  position: fixed;
+  height: fit-content;
+  width: 20vw;
+  width: 400px;
+  height: 150px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  z-index: 100;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.coming-soon img {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  width: 400px;
+  height: 150px;
+  z-index: -1;
+  margin: auto;
+}
+.coming-soon h2 {
+  color: var(--btn);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #00f, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #000;
+}
+.coming-soon .close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 10%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  z-index: 2;
+  font-size: 35px;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0);
+}
+
 /* Mobile reponsive design /////////////////////////////////////////////////// */
 @media (max-width: 768px) {
   .gameplay .row {
@@ -1115,5 +1167,13 @@ footer .social-media a {
   .gameplay {
     height: fit-content;
     padding: 20px 0;
+  }
+  .coming-soon {
+    width: 80vw;
+    height: 150px;
+  }
+  .coming-soon img {
+    width: 80vw;
+    height: 150px;
   }
 }

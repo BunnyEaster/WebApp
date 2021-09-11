@@ -72,3 +72,11 @@ closevideo = () => {
   document.getElementById("video-popup").style.display = "none";
   vid.pause();
 };
+
+startsoon = () => {
+  // onclick="startsoon()"
+  document.getElementById("comingsoon").style.display = "flex";
+};
+closeSoon = () => {
+  document.getElementById("comingsoon").style.display = "none";
+};
