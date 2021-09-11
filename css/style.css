@@ -534,10 +534,10 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(90deg, #d64ca8 0%, #6f42c1 100%);
   background: linear-gradient(90deg, var(--btn) 0%, var(--btn-hover) 100%);
   position: relative;
 }
+
 .gamerules {
   display: flex;
   flex-direction: column;
@@ -664,15 +664,23 @@ body {
   width: 300px;
 }
 
+.slide-row {
+  background: linear-gradient(90deg, var(--btn) 0%, var(--btn-hover) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .slide-row .content {
   align-self: center;
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: 80vw;
 }
 
 /* footer */
 footer {
-  background-color: var(--btn-hover);
+  /* background-color: var(--btn-hover); */
+  /* background: linear-gradient(90deg, var(--btn) 0%, var(--btn-hover) 100%); */
+
   color: var(--btn);
   color: white;
   min-height: 65vh;
@@ -700,6 +708,7 @@ footer .col {
   align-items: center;
   /* justify-content: center; */
   justify-content: space-between;
+  background: linear-gradient(90deg, var(--btn) 0%, var(--btn-hover) 100%);
 }
 footer .img-logo {
   margin: 15px;
@@ -737,8 +746,7 @@ footer .social-media a {
 /* bunny world */
 .bunnyworld {
   position: relative;
-  /* min-height: 80vh; */
-  margin: 100px 0;
+  min-height: 100vh;
 }
 .bunnycontent {
   position: absolute;
@@ -773,14 +781,6 @@ footer .social-media a {
   left: 0;
   z-index: -1;
 }
-
-/* .gameplay {
-  background: url("../img/bg4.jpg") no-repeat center center/cover;
-  width: 100%;
-  height: 100%;
-  background-attachment: fixed;
-  z-index: -1;
-} */
 
 .gameplay img {
   max-width: 100vw;
@@ -857,30 +857,25 @@ footer .social-media a {
 .fa-times {
   display: none;
 }
+
+/* Mobile reponsive design /////////////////////////////////////////////////// */
 @media (max-width: 768px) {
   .gameplay .row {
     flex-wrap: wrap;
   }
 
   .bg-img {
-    /* background: url(../assets/test_pic.jpg); */
     background: url("../img/720x1280\ bunny.jpg");
     background-repeat: no-repeat;
-    /* background-size: 100vw 100vw; */
     background-size: cover;
     background-position: top;
     background-attachment: scroll;
-    /* background-attachment: scroll; */
-    /* height: 100%; */
-    /* z-index: -1; */
     background-size: 100vw 100vh;
   }
   .wallet-btn,
   nav {
     display: none;
     z-index: 2;
-    /* width: 100vw; */
-    /* background-color: var(--btn); */
   }
   .nav-open {
     display: block;
@@ -914,8 +909,6 @@ footer .social-media a {
     bottom: 0;
     align-self: center;
     margin: 0 auto 20px auto;
-    /* margin-bottom: 20px; */
-    /* width: 100%; */
   }
   .hero-row {
     width: 100vw;
@@ -962,6 +955,8 @@ footer .social-media a {
   }
   .bunnyworld {
     margin: unset;
+    position: relative;
+    min-height: fit-content;
   }
   .bg-img4 {
     height: 30vh;
@@ -971,7 +966,6 @@ footer .social-media a {
   }
   .footer-row {
     flex-direction: column;
-    /* align-content: center; */
     align-items: center;
   }
   .navigation-links {
