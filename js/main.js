@@ -81,3 +81,15 @@ closevideo = () => {
   document.getElementById("video-popup").style.display = "none";
   vid.pause();
 };
+// $(document).ready(function () {
+//   $("#fullpage").fullpage({
+//     //options here
+//     autoScrolling: true,
+//     scrollHorizontally: true,
+//     responsiveWidth: 800,
+//     // continuousVertical: true,
+//   });
+
+//   //methods
+//   $.fn.fullpage.setAllowScrolling(true);
+// });
