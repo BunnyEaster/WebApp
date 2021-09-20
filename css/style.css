@@ -788,6 +788,12 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.slide-row h1,
+.partners h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 white;
+}
 .slide-row .content {
   align-self: center;
   margin: 0 auto;
@@ -855,7 +861,18 @@ footer .social-media a {
 .navigation-links h1 {
   color: #ffffff;
 }
+.partners {
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+}
+.partner-logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
 
+/* Footer end */
 .col-nav {
   display: flex;
   flex-direction: column;
