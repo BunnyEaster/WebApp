@@ -605,10 +605,11 @@ body {
 }
 .nft-display .left-display h3 {
   color: black;
+  color: white;
   /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #00f, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #000; */
   /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa; */
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+  /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff; */
 }
 /* game play */
 .content,
@@ -623,7 +624,9 @@ body {
 .gameplay h1 {
   font-size: 50px;
   margin-bottom: 30px;
-  text-shadow: 0 0 white;
+  text-shadow: 0 0 2px white;
+  font-family: "ZCOOL KuaiLe", cursive;
+  color: black;
 }
 .gameplay {
   display: flex;
@@ -793,7 +796,9 @@ body {
 .roadmap h1 {
   font-size: 50px;
   margin-bottom: 30px;
-  text-shadow: 0 0 white;
+  text-shadow: 0 0 2px white;
+  font-family: "ZCOOL KuaiLe", cursive;
+  color: black;
 }
 .slide-row .content {
   align-self: center;
