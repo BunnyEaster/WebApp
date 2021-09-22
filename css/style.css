@@ -812,7 +812,7 @@ body {
   width: 70%;
 }
 .roadmap img {
-  width: 100%;
+  width: 75%;
 }
 /* footer */
 footer {
@@ -1207,5 +1207,8 @@ footer .social-media a {
   .coming-soon img {
     width: 80vw;
     height: 150px;
+  }
+  .roadmap img {
+    width: 100%;
   }
 }
