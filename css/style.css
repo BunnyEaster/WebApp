@@ -789,7 +789,8 @@ body {
   justify-content: space-evenly;
 }
 .slide-row h1,
-.partners h1 {
+.partners h1,
+.roadmap h1 {
   font-size: 50px;
   margin-bottom: 30px;
   text-shadow: 0 0 white;
@@ -799,7 +800,17 @@ body {
   margin: 0 auto;
   max-width: 80vw;
 }
-
+/* roadmap */
+.roadmap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, var(--btn) 0%, var(--btn-hover) 100%);
+  align-items: center;
+}
+.roadmap hr {
+  width: 70%;
+}
 /* footer */
 footer {
   /* background-color: var(--btn-hover); */
@@ -870,6 +881,7 @@ footer .social-media a {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* Footer end */
