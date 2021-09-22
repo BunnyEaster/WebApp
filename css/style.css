@@ -672,7 +672,7 @@ body {
   display: none;
   position: fixed;
   height: fit-content;
-  width: 90vw;
+  width: fit-content;
   left: 0;
   right: 0;
   top: 0;
@@ -1221,5 +1221,9 @@ footer .social-media a {
   }
   .roadmap img {
     width: 100%;
+  }
+  iframe {
+    width: 95vw;
+    height: 168vw;
   }
 }
