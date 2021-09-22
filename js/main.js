@@ -66,11 +66,19 @@ var vid = document.getElementById("trail-video");
 
 startvideo = () => {
   document.getElementById("video-popup").style.display = "block";
-  vid.play();
+  // vid.play();
 };
 closevideo = () => {
   document.getElementById("video-popup").style.display = "none";
-  vid.pause();
+  // vid.pause();
+  // var video = document.querySelector("video");
+  // video.pause();
+  $(".yt_player_iframe").each(function () {
+    this.contentWindow.postMessage(
+      '{"event":"command","func":"stopVideo","args":""}',
+      "*"
+    );
+  });
 };
 
 startsoon = () => {
