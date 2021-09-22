@@ -811,6 +811,9 @@ body {
 .roadmap hr {
   width: 70%;
 }
+.roadmap img {
+  width: 100%;
+}
 /* footer */
 footer {
   /* background-color: var(--btn-hover); */
