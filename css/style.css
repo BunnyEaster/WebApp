@@ -779,6 +779,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+.card-content h1,
+.card-content h2,
+.card-content h3 {
+  font-family: "ZCOOL KuaiLe", cursive;
+  text-shadow: 0 0 2px white;
+}
 
 .single-card img {
   height: 300px;
