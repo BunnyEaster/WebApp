@@ -513,9 +513,8 @@ body {
   color: var(--btn);
 }
 
-.nft-display,
-.gameplay {
-  height: 100vh;
+.nft-display {
+  min-height: 100vh;
 }
 
 .discovery {
@@ -527,7 +526,7 @@ body {
   justify-content: center;
   /* min-height: 70vh; */
   width: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .left-display img {
@@ -578,6 +577,7 @@ body {
 }
 .left-display-container img {
   margin-right: 10%;
+  max-width: 100;
 }
 .left-display {
   display: none;
@@ -632,7 +632,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(90deg, var(--btn) 0%, var(--btn-hover) 100%);
   position: relative;
 }
